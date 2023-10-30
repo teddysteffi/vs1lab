@@ -195,7 +195,6 @@ input:read-only{
 
 .discovery__wrapper {
   display: flex;
-  /* TODO: float anpassen nur auf map */
   margin-top: 3%;
 }
 
@@ -212,8 +211,9 @@ li {
 .discovery__map {
   padding-left: 3%;
   float: right;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* ### TODO ### Styles for Footer Component */
 
