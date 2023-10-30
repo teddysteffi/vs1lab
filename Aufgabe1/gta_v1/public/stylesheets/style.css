@@ -49,6 +49,7 @@ a {
 /* ... your code here ... */
 
 
+
 /* Grid styles (no changes required) */
 
 .row {
@@ -109,29 +110,142 @@ a {
 
 /* ### TODO ### Styles for Header Component */
 
-/* ... your code here ... */
+.header{
+  height: 120px;
+  background-color: rgb(237, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-bottom: solid rgb(197, 197, 197) 1px;
+}
 
+.header__image {
+  height: 50%;
+  width: auto;
+  padding: 1%;
+}
 
 /* ### TODO ### Styles for Main Component */
 
-/* ... your code here ... */
+.main {
+  padding: 3%;
+}
 
+input:read-only{
+  background-color: rgb(237, 236, 236);
+}
 
 /* ### TODO ### Styles for Tagging component */
 
-/* ... your code here ... */
+#tag-form {
+  padding-top: 10px;
+}
 
+.fieldset__tagging {
+  padding: 10px;
+  border: solid 1px rgb(197, 197, 197);
+}
+
+
+.fieldset__tagging label {
+  color: rgb(133, 133, 133);
+}
+
+.fieldset__tagging input{
+  display: block;
+  padding: 5px;
+  border: solid 1px rgb(197, 197, 197);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
 
 /* ### TODO ### Styles for Discovery component */
 
-/* ... your code here ... */
+#discoveryFilterForm {
+  padding-top: 10px;
+}
+
+.fieldset__discovery {
+  padding: 10px;
+  border: solid 1px rgb(197, 197, 197);
+}
+
+.fieldset__discovery label {
+  color: rgb(133, 133, 133);
+  display: block;
+}
+
+.fieldset__discovery input{
+  padding: 5px;
+  border: solid 1px rgb(197, 197, 197);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.fieldset__discovery input {
+  width: 30%;
+  display: block;
+}
+
+.discovery__wrapper {
+  display: flex;
+  /* TODO: float anpassen nur auf map */
+  margin-top: 3%;
+}
+
+li {
+  color: #00B7FF;
+  background-color: rgb(237, 236, 236);
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid 1px rgb(197, 197, 197);
+  padding-right: 3%;
+}
+
+.discovery__map {
+  padding-left: 3%;
+  float: right;
+}
 
 
 /* ### TODO ### Styles for Footer Component */
 
-/* ... your code here ... */
-
+.footer{
+  background-color: rgb(237, 236, 236);
+  padding-left: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: solid rgb(197, 197, 197) 1px;
+}
 
 /* ### TODO ### Media Queries */
 
-/* ... your code here ... */
+@media (850px >= width) {
+  main{
+    display: block;
+  } 
+  .row {
+    display: block;
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-9 {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .discovery__wrapper{
+    display: block;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
